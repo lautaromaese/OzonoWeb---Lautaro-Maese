@@ -1,0 +1,333 @@
+
+/* AJUSTES GENERALES*/
+
+.borde{
+    border: solid 1px black;
+}
+
+
+    
+.marginTextLeft{
+    margin-left: 20px;
+}
+
+.inlineBlock{
+    display: inline-block;
+}
+
+.colorFondo{
+    background-color: #36636869;
+    
+}
+
+.encabezado{
+    background-color: rgba(173, 170, 170, 0.966);
+    border-bottom: solid 1px black;
+    width:100%
+}
+
+@font-face {
+    font-family: sono;
+    src: url(../fonts/Sono-Bold.ttf);
+}
+
+p{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+ul{
+    list-style-type: none;
+    padding:0px
+}
+
+a{
+    text-decoration: none;
+    color: black;}
+
+
+.flex{
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.sticky{
+/* position: sticky; */
+top: 0px;
+}
+
+
+.textoJustificado{
+    text-align: justify;
+}
+
+
+#footer{
+    background-color: rgba(173, 170, 170, 0.966);
+    grid-area: footer;
+    
+
+}
+
+.header__logo{
+    margin-top: 30px;
+}
+
+
+/* AJUSTES GENERALES*/
+
+
+/*AJUSTE DE CARDS*/
+
+.cards{
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: azure;
+
+}
+
+.cardClarificador{
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 400px;
+    height: 360px;
+    padding: 10px;
+    text-align: center;
+    margin: 50px;
+    background-color: azure;
+}
+
+/*AJUSTE DE CARDS*/
+
+/*AJUSTE DE NAV*/
+
+.estiloNav{
+
+    background-color: rgba(95, 91, 79, 0.315);
+    color: black;
+    border-top:solid 2px black;	
+    border-right:solid 2px black;
+    border-bottom:solid 2px black;
+    border-left:solid 2px black;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 7px;
+    }
+
+
+/*AJUSTE DE NAV*/
+
+
+
+.h1__fuente{
+    font-family:'sono', sans-serif;
+    font-size: 60px;
+    color: #12494f;
+}
+
+
+
+
+.fachada{
+
+    display: inline-block;
+    width: 100%;
+}
+
+.header__logo{
+    margin-top: 30px;
+}
+
+/*AJUSTE DE IMAGENES*/
+
+.imagenTienda{
+    width: 200px;
+    height: 200px;
+}
+
+/*AJUSTE DE CUIDADOS*/
+
+.cardCuidados{
+    border: solid 1px black;
+    border-radius: 600px;
+    width: 400px;
+    padding: 20px;
+    text-align: center;
+    margin: 60px;
+    background-color: azure;
+}
+
+.textoCentrado{
+    text-align: center;
+}
+
+/*AJUSTE DE CARD CONTACTOS*/
+
+.fondoCardContactos{
+    background-color: #4444449f;
+}
+
+/* AJUSTES DE GRID INDEX*/
+
+.padre{
+  display: grid;  
+  grid-template-areas: 
+  "header header"
+  "img img "
+  "div div"
+  "footer footer";
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+
+.header{
+  grid-area: header;  
+}
+
+.img{
+    grid-area: img;
+    border-radius: 15px;
+
+}
+
+.div{
+    grid-area: div;
+    width: 100%;
+}
+
+/* AJUSTES DE GRID INDEX*/
+
+/* AJUSTES DE GRID TIENDA*/
+
+.padreTienda{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "section section"
+    "footer footer"
+    ;
+    grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+}
+
+.section{
+    grid-area: section;
+}
+
+/*RESPONSIV*/
+@media only screen and (max-width:370px){
+    body{
+    background-color: #36636869;
+}
+    .flex{
+          width:100%;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    
+    }
+    
+
+    .encabezado{
+        background-color: rgba(173, 170, 170, 0.966);
+        border-bottom: solid 1px black;
+        width:100%
+    }
+
+    .header{
+        grid-area: header;  
+      }
+
+    .estiloNav{
+
+        background-color: rgba(95, 91, 79, 0.315);
+        color: black;
+        border-top:solid 2px black;	
+        border-right:solid 2px black;
+        border-bottom:solid 2px black;
+        border-left:solid 2px black;
+        border-radius: 10px;
+        }
+
+        .h1__fuente{
+            font-family:'sono', sans-serif;
+            font-size: 20px;
+            color: #12494f;
+            text-align:center;
+        }
+
+        .header__logo{
+            margin: auto;
+        }
+    
+
+}
+
+@media only screen and (min-width:371px) and (max-width: 768px){
+    body{
+    background-color: #36636869;
+    }
+    .padre{
+        grid-template-areas: 
+                            "header"
+                            "img"
+                            "div"
+                            "footer"; 
+    }
+
+
+    .header{
+        grid-area: header;  
+      }
+
+    .encabezado{
+        background-color: rgba(173, 170, 170, 0.966);
+        border-bottom: solid 1px black;
+        width:100%
+    }
+
+    .header__logo{
+        margin: auto;
+    }
+
+    .h1__fuente{
+        font-family:'sono', sans-serif;
+        font-size: 40px;
+        color: #12494f;
+        text-align:center;
+    }
+
+    .nav{
+        flex-direction: column;
+    }
+
+    .flex{
+    width:100%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+  }
+
+  .cards{
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    background-color: azure;
+}
+
+.div{
+    grid-area: div;
+    width: 100%;
+    margin: 1%;
+}
+}
+
+
+
+
+
+
