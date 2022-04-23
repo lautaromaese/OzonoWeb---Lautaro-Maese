@@ -1,6 +1,10 @@
 
 /* AJUSTES GENERALES*/
 
+.escalar{
+    scale: (0.5);
+}
+
 .borde{
     border: solid 1px black;
 }
