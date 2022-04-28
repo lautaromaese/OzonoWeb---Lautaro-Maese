@@ -1,6 +1,19 @@
 
 /* AJUSTES GENERALES*/
 
+
+.marginBottom{
+    margin-bottom: 5%;
+}
+
+.margin1{
+    margin-top: 5%;
+}
+
+.margin{
+    margin-top: 10px;
+}
+
 .escalar{
     scale: (0.5);
 }
@@ -65,12 +78,14 @@ top: 0px;
     text-align: justify;
 }
 
+.centrado{
+    align-items: center;
+}
 
-#footer{
+
+.footer{
     background-color: rgba(173, 170, 170, 0.966);
     grid-area: footer;
-    
-
 }
 
 .header__logo{
@@ -141,7 +156,7 @@ top: 0px;
 }
 
 .header__logo{
-    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 /*AJUSTE DE IMAGENES*/
@@ -221,7 +236,8 @@ top: 0px;
 }
 
 /*RESPONSIV*/
-@media only screen and (max-width:370px){
+
+/*@media only screen and (max-width:370px){
     body{
     background-color: #36636869;
 }
@@ -267,9 +283,9 @@ top: 0px;
         }
     
 
-}
+}*/
 
-@media only screen and (min-width:371px) and (max-width: 768px){
+/*@media only screen and (min-width:371px) and (max-width: 768px){
     body{
     background-color: #36636869;
     }
@@ -328,7 +344,7 @@ top: 0px;
     width: 100%;
     margin: 1%;
 }
-}
+}*/
 
 
 
