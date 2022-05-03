@@ -237,7 +237,7 @@ top: 0px;
 
 /*RESPONSIV*/
 
-/*@media only screen and (max-width:370px){
+@media only screen and (max-width:370px){
     body{
     background-color: #36636869;
 }
@@ -283,9 +283,9 @@ top: 0px;
         }
     
 
-}*/
+}
 
-/*@media only screen and (min-width:371px) and (max-width: 768px){
+@media only screen and (min-width:371px) and (max-width: 768px){
     body{
     background-color: #36636869;
     }
@@ -344,7 +344,7 @@ top: 0px;
     width: 100%;
     margin: 1%;
 }
-}*/
+}
 
 
 
