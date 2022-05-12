@@ -1,0 +1,38 @@
+
+/*COLORES DE FONDO PARA CARDS*/
+
+$coloresCard:("card1":rgb(153, 149, 149), "card2": beige, "card3": rgb(75, 75, 126));
+
+@each $name, $color in $coloresCard {
+
+    .colorCard- #{$name}{
+        background-color: $color;
+    }
+    
+}
+
+.cardClarificador{
+    border: solid 1px black;
+    border-radius: 10px;
+    width: 400px;
+    height: 360px;
+    padding: 10px;
+    text-align: center;
+    margin: 50px;
+    background-color: azure;
+}
+
+.cardClarificadorAlter{
+    @extend .cardClarificador;
+    background-color: beige;
+}
+
+@mixin modificador($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+.imgLogo{
+    margin: 10px;
+    @include modificador(300px, 350px)
+}
