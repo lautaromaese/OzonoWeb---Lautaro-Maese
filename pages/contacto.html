@@ -7,36 +7,89 @@
     <title>Contacto - Ozono Piscinas</title>
     <meta name="keywords" content="piscinas, productos de piscinas, pileta, contacto, posadas, misiones">
     <meta name="description" content="Ozono piscinas es una empresa que se encuentra posicinada en la ciudad de Posadas hace 20 años. Contamos con diversos servicios para ofrecer lo mejor a nuestros clientes; estos son desde mantenimiento de piscinas, construcción de las mismas hasta diseño de ambientes">
+    <!--ICONOS-->
+    <script src="https://kit.fontawesome.com/c6c2c34288.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
 
 </head>
 <body>
     <div class="colorFondo">
-    <!-- NAVEGADOR-->
-    <header class="flex sticky encabezado">
-        <img class="header__logo" src="../imagenes/descarga.jpg" alt="logo" width="150px" height="150px">
-        <div>
-            <h1 class="h1__fuente">Ozono Piscinas</h1>
-    
-            <nav>
-               <div>
-                <ul class="flex">
-                    <li class="estiloNav"><a href="../index.html">Home</a></li>
-                    <li class="estiloNav"><a href="tienda.html">Tienda Online</a></li>
-                    <li class="estiloNav"><a href="cuidados.html" >¿Como mantener tu piscina?</a></li>
-                    <li class="estiloNav"><a href="servicios.html">Servicios</a></li>
-                    <li class="estiloNav"><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>  
-            </nav>
+
+<!--NAVEGADOR-->
+
+<nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Ozono Piscinas</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <a href="#footer">Ir al pie</a>
-    </header>
-        <!-- NAVEGADOR-->
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tienda.html">Tienda</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cuidados.html">Mantenimiento</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
 
-<h2 class="marginText">Contacto</h2>    
+    </div>
+  </nav>
+<!--NAVEGADOR-->
 
-<form>
+<main>
+
+<div class="container">
+<h3 class="marginText">Formulario de contacto</h3>  
+<hr class="featurette-divider">
+
+<div>
+
+  <div class="card marginServicios" style="width: 18rem;">
+    <div class="card-body">
+      <input class="form-control marginContacto" type="text" placeholder="Nombre completo" aria-label="default input example">
+      <input class="form-control marginContacto" type="text" placeholder="Telefono" aria-label="default input example">
+      <input type="email " class="form-control marginContacto" id="exampleFormControlInput1" placeholder="Email">
+      <select class="form-select marginContacto" aria-label="Default select example">
+        <option selected>Tipo de consulta</option>
+        <option value="1">Asesoramiento sobre mantenimiento</option>
+        <option value="2">Asesoramiento sobre construcción de piscina</option>
+        <option value="3">Mantenimiento a domicilio</option>
+        <option value="4">Diseño de ambientes</option>
+      </select>
+      <select class="form-select marginContacto" aria-label="Default select example">
+        <option selected>Horario de contacto</option>
+        <option value="1">Mañana</option>
+        <option value="2">Tarde</option>
+      </select>
+      <textarea name="observaciones" placeholder="Si desea puede brindarnos datalles u obeservaciones sobre su consulta" class="marginContacto"></textarea>
+      <button type="button submit" class="btn btn-primary marginContacto"
+        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;"> Enviar
+      </button>
+    </div>
+
+
+
+
+</div>
+
+</main>
+
+<!--<form>
     <fieldset class="borde inlineBlock marginText fondoCardContactos">
         <legend>Contactanos</legend>
         <label for="nombre">Nombre</label> <br>
@@ -59,14 +112,59 @@
         <input type="submit" value="enviar">
         <input type="reset" value="limpiar">
     </fieldset>
-</form>
+</form>-->
 
-<footer id="footer">
-    
-    Contacto: 3764752546  <br>
-    Dirección: belgrano 1421
-    
-</footer>
+
+
+<footer>
+
+  <div class="container__footer footer">
+    <div class="box__footer">
+      <div class="logo">
+        <img src="../imagenes/logo recor.png" alt="">
+      </div>
+      <div class="terms">
+      <p>Lideres en el nordeste argentino, especializados en la construcción de piscinas</p>
+      <p>Posadas - Misiones</p>
+      <p></p>
+      </div>
+    </div>
+  
+    <div class="box__footer">
+      <h2>Tienda online</h2>
+      <a href="">Químicos</a>
+      <a href="">Decoración</a>
+    </div>
+  
+    <div class="box__footer">
+      <h2>Mantenimiento</h2>
+      <a href="mantenimiento.html">Agua verde</a>
+      <a href="mantenimiento.html">Como medir los niveles de cloro y PH</a>
+      <a href="mantenimiento.html">Hongos negros</a>
+    </div>
+  
+    <div class="box__footer">
+      <h2>Servicios</h2>
+      <a href="servicios.html">Asesoramiento sobre mantenimiento</a>
+      <a href="servicios.html">Asesoramiento sobre construcción de piscina</a>
+      <a href="servicios.html">Mantenimiento a domicilio</a>
+      <a href="servicios.html">Diseño de ambientes</a>
+    </div>
+  
+    <div class="box__footer">
+      <h2>Contacto</h2>
+      <a href=""><i class="fa-solid fa-phone"></i> Tel: 376 442-0971</a>
+      <a href="contacto.html"> <i class="fa-solid fa-clipboard-list"></i>Formulario de contacto</a>
+      <a href=""><i class="fa-brands fa-instagram-square"></i> Ozonopiscinas</a>
+      <a href=""> <i class="fa-brands fa-facebook"></i> Ozono piscinas</a>
+    </div>
+  </div>
+  
+  </div>
+  </footer>
+
+
+<script src="../js/bootstrap.bundle.min.js"></script>
 
 
 </div>

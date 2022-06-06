@@ -12,8 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!--ICONOS-->
+    <script src="https://kit.fontawesome.com/c6c2c34288.js" crossorigin="anonymous"></script>
     <!-- LIBRERIA BOOTSTRAP -->
-    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"   integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -44,7 +45,7 @@
                       <a class="nav-link" href="pages/tienda.html">Tienda</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pages/cuidados.html">¿Como mantener tu piscina?</a>
+                        <a class="nav-link" href="pages/cuidados.html">Mantenimiento</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pages/servicios.html">Servicios</a>
@@ -66,10 +67,10 @@
             <img src="imagenes/fachada.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="imagenes/IMG_5404.JPG" class="d-block w-100" alt="...">
+            <img src="imagenes/pile1.jpg" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="imagenes/IMG_5405.JPG" class="d-block w-100" alt="...">
+            <img src="imagenes/pile2.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -85,35 +86,76 @@
 
       <div class="flex margin1 marginBottom">
 
-        <div class="card border-dark mb-3 animate__animated animate__pulse" style="max-width: 18rem;">
-            <div class="card-header">¿Quienes somos?</div>
+        <div class="card border-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header cardsIndexTitulo">¿Quienes somos?</div>
             <div class="card-body text-dark">
-              <p class="card-text">Somos una empresa familiar que se encuentra en el mercado hace 20 años, birndando servicios sobre piscinas etc</p>
+              <p class="card-text cardsIndexTexto">Somos una empresa familiar que se encuentra en el mercado hace 20 años, birndando servicios sobre piscinas etc</p>
             </div>
         </div>
 
-        <div class="card border-dark mb-3 animate__animated animate__pulse" style="max-width: 18rem;">
-            <div class="card-header">¿Quienes somos?</div>
+        <div class="card border-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header cardsIndexTitulo">Metodos de pago</div>
             <div class="card-body text-dark">
-              <p class="card-text">Somos una empresa familiar que se encuentra en el mercado hace 20 años, birndando servicios sobre piscinas etc</p>
+              <p class="card-text cardsIndexTexto">Tarjeta de débito y credito (Visa, Master, Tarjeta naranja plan Z).</p>
             </div>
         </div>
         
-            <div class="card border-dark mb-3 animate__animated animate__pulse" style="max-width: 18rem;">
-                <div class="card-header">¿Por qué elegirnos?</div>
+            <div class="card border-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header cardsIndexTitulo">Horarios</div>
                 <div class="card-body text-dark">
-                  <p class="card-text">Somos una empresa familiar que se encuentra en el mercado hace 20 años, birndando servicios sobre piscinas etc</p>
+                  <p class="card-text cardsIndexTexto">Lunes a viernes de 09:00hs hasta las 13:00hs. Por la tarde desde 16:30hs hasta las 19:00hs.</p>
                 </div>
             </div>
         </div>
 
 
-<footer class="footer margin1">
+<footer>
 
-    Contacto: 3764752546  
-    Dirección: belgrano 1421
-    
+<div class="container__footer footer">
+  <div class="box__footer">
+    <div class="logo">
+      <img src="imagenes/logo recor.png" alt="">
+    </div>
+    <div class="terms">
+    <p>Lideres en el nordeste argentino, especializados en la construcción de piscinas</p>
+    <p>Posadas - Misiones | Junin 1421 </p>
+    </div>
+  </div>
+
+  <div class="box__footer">
+    <h2>Tienda online</h2>
+    <a href="">Químicos</a>
+    <a href="">Decoración</a>
+  </div>
+
+  <div class="box__footer">
+    <h2>Mantenimiento</h2>
+    <a href="pages/cuidados.html">Agua verde</a>
+    <a href="pages/mantenimiento.html">Como medir los niveles de cloro y PH</a>
+    <a href="pages/mantenimiento.html">Hongos negros</a>
+  </div>
+
+  <div class="box__footer">
+    <h2>Servicios</h2>
+    <a href="pages/servicios.html">Asesoramiento sobre mantenimiento</a>
+    <a href="pages/servicios.html">Asesoramiento sobre construcción de piscina</a>
+    <a href="pages/servicios.html">Mantenimiento a domicilio</a>
+    <a href="pages/servicios.html">Diseño de ambientes</a>
+  </div>
+
+  <div class="box__footer">
+    <h2>Contacto</h2>
+    <a href=""><i class="fa-solid fa-phone"></i> Tel: 376 442-0971</a>
+    <a href="pages/contacto.html"> <i class="fa-solid fa-clipboard-list"></i>Formulario de contacto</a>
+    <a href=""><i class="fa-brands fa-instagram-square"></i> Ozonopiscinas</a>
+    <a href=""> <i class="fa-brands fa-facebook"></i> Ozono piscinas</a>
+  </div>
+</div>
+
+</div>
 </footer>
+
+
 
 <script src="js/bootstrap.bundle.min.js"></script>
 
